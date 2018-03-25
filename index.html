@@ -6,17 +6,29 @@
     <title>Students</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/design.css">
+    <script type="text/javascript">
+      // Tesing load times
+      const timerStart = Date.now();
+    </script>
   </head>
   <body>
     <div class="page">
+
+      <noscript>
+        <style type="text/css">
+          .pagecontainer {
+            display: none;
+          }
+        </style>
+        <div class="noscriptmsg">
+          You don't have javascript enabled. Good luck with that.
+        </div>
+      </noscript>
+
       <div class="page-header cf">
         <h2>Students</h2>
         <!-- dynamically insert search form here (optional) -->
         <!-- student search HTML to add dynamically -->
-        <div class="student-search">
-          <input placeholder="Search for students...">
-          <button>Search</button>
-        </div>
 
       </div>
       <ul class="student-list">
@@ -563,28 +575,8 @@
       </ul>
       <!-- dynamically="dynamically" add="add" pagination="pagination" links="links" here="here"> -->
       <!-- pagination HTML to create dynamically -->
-      <div class="pagination">
-        <ul>
-          <li>
-            <a class="active" href="#">1</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a href="#">4</a>
-          </li>
-          <li>
-            <a href="#">5</a>
-          </li>
-        </ul>
-      </div>
-      <!-- end pagination -->
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-  </body>
-</html>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- <script src="app.js"></script> -->
+      <script src="script.js"></script>
+    </body>
+  </html>
